@@ -6,7 +6,7 @@
 </head>
 <body>
   <p>
-    欢迎光临!今天是 <span id="date"></span>
+    <span id = "greeting"></span> 现在是 <span id="date"></span>
   </p>
 
   <script>
@@ -17,6 +17,46 @@
     var welcomes = ["欢迎访问我的主页!","很高兴见到您!","欢迎阅读我的博客!"];
     var randomIndex = Math.floor(Math.random() * welcomes.length);
     document.write("<p>"+welcomes[randomIndex]+"</p>");
+    // 获取当前时间
+var hours = date.getHours();
+
+// 设置问候语
+var greeting;
+if(hours >= 4 && hours < 10) {
+  greeting = '早上好!';
+} else if(hours >= 10 && hours < 14) {
+  greeting = '中午好!';  
+} else if(hours >= 14 && hours < 18) {
+  greeting = '下午好!';
+} else if(hours >= 18 && hours < 22) {
+  greeting = '晚上好!';
+} else {
+  greeting = '祝你好梦!';
+}
+
+// 显示问候语  
+document.write("<p>" + greeting + "</p>");
+
+// 每秒更新时间和问候语
+setInterval(function() {
+  var date = new Date(); 
+  var hours = date.getHours();
+  
+  // 更新问候语
+  if(hours >= 4 && hours < 10) {
+    greeting = '早上好!';
+  } else if(hours >= 10 && hours < 14) {
+    greeting = '中午好!';
+  } else if(hours >= 14 && hours < 18) {
+    greeting = '下午好!';
+  } else if(hours >= 18 && hours < 22) {
+    greeting = '晚上好!';
+  } else {
+    greeting = '祝你好梦!';
+  }
+  
+  document.getElementById('greeting').innerText = greeting;
+}, 1000);
   </script>
 
 </body>
