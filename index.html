@@ -4,6 +4,10 @@
   <meta charset="UTF-8"> 
   <title>问候</title>
   <style>
+  @font-face {
+  font-family: 'gravity-bi';
+  src: url('GravityBookItalic-zpra.otf') format('opentype'); 
+}
     body {
   background-color: #e9ddb6;
   font-size: 20px;
@@ -25,7 +29,7 @@ h1 {
 }
 #quote {
   font-size: 20px;
-  font-family: tahoma, sans-sefif;
+  font-family: gravity-bi, sans-sefif, STFangSong;
 }
   </style>
 </head>
@@ -65,14 +69,14 @@ h1 {
     // 输出问候语
     greetingElement.innerText = greeting;
 
-    // 励志格言
-var quotes = ["TAKE YOUR HEART", "Life will change", 
-              "No more what ifs", "Burn your dread",
+    // 随机quote
+var quotes = ["TAKE YOUR HEART!", "-Life will change-", "-With stars and us-",
+              "-No more what ifs-", "-Burn your dread-", "-INFINITY-",
               "My story will be starring me just like yours.",
               "What fills up my soul is passionate music that makes me want to sing.",
               "Live one more day.", "You're already always free!"]; 
 
-// 随机选择一句格言
+// 随机选择一句
 var quoteIndex = Math.floor(Math.random() * quotes.length);
 var quote = quotes[quoteIndex];
 
