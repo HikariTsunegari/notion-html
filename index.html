@@ -12,15 +12,20 @@
 
 h1 {
   color: #333;
+  font-family: STFangsong, FangSong, Times New Roman;
 }
 
 #greeting {
   font-size: 30px;
   font-family: STFangsong, FangSong, Times New Roman;
 }
-#date, #quote{
+#date {
   font-size: 20px;
   font-family: STFangsong, FangSong, Times New Roman;
+}
+#quote {
+  font-size: 20px;
+  font-family: tahoma, sans-sefif;
 }
   </style>
 </head>
@@ -47,9 +52,9 @@ h1 {
 
     if (hours >= 4 && hours < 10) {
       greeting = '早上好!';
-    } else if (hours >= 10 && hours < 14) {
+    } else if (hours >= 10 && hours < 13) {
       greeting = '中午好!';
-    } else if (hours >= 14 && hours < 18) {  
+    } else if (hours >= 13 && hours < 18) {  
       greeting = '下午好!';
     } else if (hours >= 18 && hours < 22) {
       greeting = '晚上好!';
@@ -61,7 +66,11 @@ h1 {
     greetingElement.innerText = greeting;
 
     // 励志格言
-var quotes = ["生命不息,奋斗不止。", "天将降大任于斯人也。", "越努力,越幸运。"]; 
+var quotes = ["TAKE YOUR HEART", "Life will change", 
+              "No more what ifs", "Burn your dread",
+              "My story will be starring me just like yours.",
+              "What fills up my soul is passionate music that makes me want to sing.",
+              "Live one more day.", "You're already always free!"]; 
 
 // 随机选择一句格言
 var quoteIndex = Math.floor(Math.random() * quotes.length);
