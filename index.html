@@ -4,9 +4,19 @@
   <meta charset="UTF-8"> 
   <title>当前日期时间</title>
   <style>
-    #greeting {
-      font-size: 20px; 
-    }
+    body {
+  background-color: #f2f2f2;
+  font-family: Arial;
+}
+
+h1 {
+  color: #333;
+}
+
+#date, #greeting,#quote {
+  font-size: 20px;
+  font-weight: bold;  
+}
   </style>
 </head>
 
@@ -17,13 +27,13 @@
   <p>
     今天是 <span id="date"></span>
   </p>
-  
-<p id="welcomes[randomIndex]"></p>
+
+  <p id="quote"></p>
+
   <script>
 
     var dateElement = document.getElementById("date");
     var greetingElement = document.getElementById("greeting");
-    var welcomesElement = document.getElementById("welcomes");
 
     // 初始化问候语
     var date = new Date();
@@ -45,10 +55,15 @@
     // 输出问候语
     greetingElement.innerText = greeting;
 
-    // 显示随机一句问候语
-    var welcomes = ["欢迎访问我的主页!","很高兴见到您!","欢迎阅读我的博客!"];
-    var randomIndex = Math.floor(Math.random() * welcomes.length);
-    welcomesElement.innerText = welcomes;
+    // 励志格言
+var quotes = ["生命不息,奋斗不止。", "天将降大任于斯人也。", "越努力,越幸运。"]; 
+
+// 随机选择一句格言
+var quoteIndex = Math.floor(Math.random() * quotes.length);
+var quote = quotes[quoteIndex];
+
+// 插入到页面 
+document.getElementById("quote").innerText = quote;
 
     // 每秒更新时间和问候语
     setInterval(function() {
@@ -79,4 +94,3 @@
 
 </body>
 </html>
-
