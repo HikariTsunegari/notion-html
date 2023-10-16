@@ -8,24 +8,28 @@
   font-family: 'gravity-bi';
   src: url('GravityBookItalic-zpra.otf') format('opentype'); 
 }
+  @font-face {
+    font-family: 'sanxian';
+    src: url('SanjiSuxianJianti.ttf') format('truetype');
+  }
     body {
   background-color: #e9ddb6;
   font-size: 20px;
-  font-family: STFangsong, FangSong, Times New Roman;
+  font-family: gravity-bi, sanxian;
 }
 
 h1 {
   color: #333;
-  font-family: STFangsong, FangSong, Times New Roman;
+  font-family: gravity-bi, sanxian;
 }
 
 #greeting {
   font-size: 30px;
-  font-family: STFangsong, FangSong, Times New Roman;
+  font-family: gravity-bi, sanxian;
 }
 #date {
   font-size: 20px;
-  font-family: STFangsong, FangSong, Times New Roman;
+  font-family: gravity-bi, sanxian;
 }
 #quote {
   font-size: 20px;
@@ -63,7 +67,7 @@ h1 {
     } else if (hours >= 18 && hours < 22) {
       greeting = '晚上好!';
     } else {
-      greeting = '祝你好梦!';
+      greeting = '怎么还不睡!';
     }
     
     // 输出问候语
@@ -112,7 +116,7 @@ weekday[6] = "星期六";
       } else if (hours >= 18 && hours < 22) {
         greeting = '晚上好!';
       } else {
-        greeting = '祝你好梦!';
+        greeting = '怎么还不睡!';
       }
       
       greetingElement.innerText = greeting;
