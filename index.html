@@ -15,7 +15,7 @@
     body {
   background-color: #e9ddb6;
   font-size: 20px;
-  font-family: gravity-bi, tahoma, sanxian, Microsoft YaHei;
+  font-family: gravity-bi, tahoma, STfangsong;
 }
 
 h1 {
@@ -50,15 +50,15 @@ h1 {
     var greeting;
 
     if (hours >= 4 && hours < 10) {
-      greeting = '早上好!';
+      greeting = '早上好！';
     } else if (hours >= 10 && hours < 13) {
-      greeting = '中午好!';
+      greeting = '中午好！';
     } else if (hours >= 13 && hours < 18) {  
-      greeting = '下午好!';
+      greeting = '下午好！';
     } else if (hours >= 18 && hours < 22) {
-      greeting = '晚上好!';
+      greeting = '晚上好！';
     } else {
-      greeting = '怎么还不睡!';
+      greeting = '怎么还不睡！';
     }
     
     // 输出问候语
@@ -99,15 +99,15 @@ weekday[6] = "星期六";
       // 更新问候语
       var hours = date.getHours();
       if (hours >= 4 && hours < 10) {
-        greeting = '早上好!';
+        greeting = '早上好！';
       } else if (hours >= 10 && hours < 14) {
-        greeting = '中午好!';
+        greeting = '中午好！';
       } else if (hours >= 14 && hours < 18) {
-        greeting = '下午好!'; 
+        greeting = '下午好！'; 
       } else if (hours >= 18 && hours < 22) {
-        greeting = '晚上好!';
+        greeting = '晚上好！';
       } else {
-        greeting = '怎么还不睡!';
+        greeting = '怎么还不睡！';
       }
       
       greetingElement.innerText = greeting;
