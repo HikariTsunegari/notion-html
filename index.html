@@ -48,21 +48,35 @@ h1 {
     var date = new Date();
     var hours = date.getHours();
     var greeting;
+    var bgColor, fontColor;
 
     if (hours >= 4 && hours < 10) {
       greeting = '早上好！';
+      bgColor = '#f2eada';
+      fontColor = '#62381f';
     } else if (hours >= 10 && hours < 13) {
       greeting = '中午好！';
+      bgColor = '#fff4e1';
+      fontColor = '#4e2a12';
     } else if (hours >= 13 && hours < 18) {  
       greeting = '下午好！';
+      bgColor = '#e3d9ca';
+      fontColor = '#594133'; 
     } else if (hours >= 18 && hours < 22) {
       greeting = '晚上好！';
+      bgColor = '#d0b8a3';
+      fontColor = '#482f24';
     } else {
       greeting = '怎么还不睡！';
+      bgColor = '#332d39';
+      fontColor = '#e7e0d5';
     }
     
     // 输出问候语
     greetingElement.innerText = greeting;
+    // 改变颜色
+    document.body.style.backgroundColor = bgColor;
+    document.body.style.color = fontColor;
 
     // 随机quote
 var quotes = ["TAKE YOUR HEART!", "-Life will change-", "-With stars and us-",
@@ -98,19 +112,32 @@ weekday[6] = "星期六";
 
       // 更新问候语
       var hours = date.getHours();
-      if (hours >= 4 && hours < 10) {
-        greeting = '早上好！';
-      } else if (hours >= 10 && hours < 14) {
-        greeting = '中午好！';
-      } else if (hours >= 14 && hours < 18) {
-        greeting = '下午好！'; 
-      } else if (hours >= 18 && hours < 22) {
-        greeting = '晚上好！';
-      } else {
-        greeting = '怎么还不睡！';
-      }
+      
+    if (hours >= 4 && hours < 10) {
+      greeting = '早上好！';
+      bgColor = '#f2eada';
+      fontColor = '#62381f';
+    } else if (hours >= 10 && hours < 13) {
+      greeting = '中午好！';
+      bgColor = '#fff4e1';
+      fontColor = '#4e2a12';
+    } else if (hours >= 13 && hours < 18) {  
+      greeting = '下午好！';
+      bgColor = '#e3d9ca';
+      fontColor = '#594133'; 
+    } else if (hours >= 18 && hours < 22) {
+      greeting = '晚上好！';
+      bgColor = '#d0b8a3';
+      fontColor = '#482f24';
+    } else {
+      greeting = '怎么还不睡！';
+      bgColor = '#332d39';
+      fontColor = '#e7e0d5';
+    }
       
       greetingElement.innerText = greeting;
+      document.body.style.backgroundColor = bgColor;
+      document.body.style.color = fontColor;
       
     }, 1000);
 
