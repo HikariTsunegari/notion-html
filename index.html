@@ -7,15 +7,16 @@
   @font-face {
   font-family: 'gravity-bi';
   src: url('font/GravityBookItalic-zpra.otf') format('opentype'); 
+  font-size: 22px;
 }
   @font-face {
     font-family: 'nanan';
     src: url('font/字体传奇南安体.ttf') format('truetype');
   }
-    body {
-  background-color: #e9ddb6;
+    
+body {
   font-size: 20px;
-  font-family: nanan, Microsoft YaHei;
+  font-family: gravity-bi, tahoma, nanan, Microsoft YaHei;
 }
 
 h1 {
@@ -61,7 +62,7 @@ h1 {
     } else if (hours >= 13 && hours < 18) {  
       greeting = '下午好！';
       bgColor = '#add5a2';
-      fontColor = '#253d24'; 
+      fontColor = '#141e1b'; 
     } else if (hours >= 18 && hours < 22) {
       greeting = '晚上好！';
       bgColor = '#652b1c';
@@ -124,7 +125,7 @@ weekday[6] = "星期六";
     } else if (hours >= 13 && hours < 18) {  
       greeting = '下午好！';
       bgColor = '#add5a2';
-      fontColor = '#253d24'; 
+      fontColor = '#141e1b'; 
     } else if (hours >= 18 && hours < 22) {
       greeting = '晚上好！';
       bgColor = '#652b1c';
