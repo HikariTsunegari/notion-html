@@ -6,16 +6,16 @@
   <style>
   @font-face {
   font-family: 'gravity-bi';
-  src: url('GravityBookItalic-zpra.otf') format('opentype'); 
+  src: url('font/GravityBookItalic-zpra.otf') format('opentype'); 
 }
   @font-face {
-    font-family: 'sanxian';
-    src: url('SanjiSuxianJianti.ttf') format('truetype');
+    font-family: 'nanan';
+    src: url('font/字体传奇南安体.ttf') format('truetype');
   }
     body {
   background-color: #e9ddb6;
   font-size: 20px;
-  font-family: gravity-bi, tahoma, fangsong, Microsoft YaHei;
+  font-family: gravity-bi, tahoma, nanan, Microsoft YaHei;
 }
 
 h1 {
@@ -52,24 +52,24 @@ h1 {
 
     if (hours >= 4 && hours < 10) {
       greeting = '早上好！';
-      bgColor = '#f2eada';
-      fontColor = '#62381f';
+      bgColor = '#f1c4cd';
+      fontColor = '#2d0c13';
     } else if (hours >= 10 && hours < 13) {
       greeting = '中午好！';
-      bgColor = '#fff4e1';
-      fontColor = '#4e2a12';
+      bgColor = '#8fb2c9';
+      fontColor = '#134857';
     } else if (hours >= 13 && hours < 18) {  
       greeting = '下午好！';
-      bgColor = '#e3d9ca';
-      fontColor = '#594133'; 
+      bgColor = '#add5a2';
+      fontColor = '#253d24'; 
     } else if (hours >= 18 && hours < 22) {
       greeting = '晚上好！';
-      bgColor = '#d0b8a3';
-      fontColor = '#482f24';
+      bgColor = '#652b1c';
+      fontColor = '#f8ebe6';
     } else {
       greeting = '怎么还不睡！';
-      bgColor = '#332d39';
-      fontColor = '#e7e0d5';
+      bgColor = '#1f2040';
+      fontColor = '#ccccd6';
     }
     
     // 输出问候语
@@ -115,24 +115,24 @@ weekday[6] = "星期六";
       
     if (hours >= 4 && hours < 10) {
       greeting = '早上好！';
-      bgColor = '#f2eada';
-      fontColor = '#62381f';
+      bgColor = '#f1c4cd';
+      fontColor = '#2d0c13';
     } else if (hours >= 10 && hours < 13) {
       greeting = '中午好！';
-      bgColor = '#fff4e1';
-      fontColor = '#4e2a12';
+      bgColor = '#8fb2c9';
+      fontColor = '#134857';
     } else if (hours >= 13 && hours < 18) {  
       greeting = '下午好！';
-      bgColor = '#e3d9ca';
-      fontColor = '#594133'; 
+      bgColor = '#add5a2';
+      fontColor = '#253d24'; 
     } else if (hours >= 18 && hours < 22) {
       greeting = '晚上好！';
-      bgColor = '#d0b8a3';
-      fontColor = '#482f24';
+      bgColor = '#652b1c';
+      fontColor = '#f8ebe6';
     } else {
       greeting = '怎么还不睡！';
-      bgColor = '#332d39';
-      fontColor = '#e7e0d5';
+      bgColor = '#1f2040';
+      fontColor = '#ccccd6';
     }
       
       greetingElement.innerText = greeting;
